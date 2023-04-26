@@ -2,6 +2,22 @@
   background-color: var(--black-color);
 }
 
+@media screen and (min-width: 768px) {
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
 .hero-title {
   margin-bottom: 60px;
   font-weight: 600;
@@ -11,7 +27,16 @@
   color: var(--white-color);
 }
 
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 60px;
+    line-height: calc(62 / 60);
+  }
+}
+
 .swiper-wrapper {
+  margin-bottom: 20px;
+  max-width: 266px;
 }
 
 .swiper-slide {
@@ -21,6 +46,7 @@
   display: flex;
   align-items: end;
   margin-bottom: 40px;
+  max-width: 266px;
 }
 
 .button-prev {
@@ -32,7 +58,6 @@
 }
 
 .button-prev-icon {
-  color: white;
 }
 
 .button-next {
@@ -43,8 +68,6 @@
 }
 
 .button-next-icon {
-  stroke: var(--white-color);
-  /* fill: white; */
 }
 
 .swiper-numbers {
@@ -62,6 +85,13 @@
   height: 1px;
   margin: 5px 6px;
   background-color: var(--white-color);
+}
+
+.test {
+  width: 436px;
+  height: 307px;
+  margin-bottom: 40px;
+  color: white;
 }
 
 .hero-descr {

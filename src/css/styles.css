@@ -4,16 +4,6 @@
   | default @import url()
   |============================
 */
-@import url('./reset.css');
-@import url('./header.css');
-@import url('./hero.css');
-@import url('./about-us.css');
-@import url('./catalog.css');
-@import url('./promo.css');
-@import url('./sale.css');
-@import url('./footer.css');
-@import url('./modal.css');
-@import url('./burger.css');
 
 :root {
   /* font-synthesis: none;
@@ -44,13 +34,13 @@ body{
   max-width: var(--mobile-size);
   outline: 1px solid red;
 }
-@media screen and (min-width: --var(--tablet-size)) {
+@media screen and (min-width: 768px) {
   .container {
     padding: 0 32px;
     max-width: var(--tablet-size);
   }
 }
-@media screen and (min-width: --var(--desk-size)) {
+@media screen and (min-width: 1280px) {
   .container {
     padding: 0 52px;
     max-width: var(--desk-size);
@@ -69,6 +59,15 @@ body{
   margin-bottom: 40px;
 }
 
-
+@import url('./reset.css');
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./about-us.css');
+@import url('./catalog.css');
+@import url('./promo.css');
+@import url('./sale.css');
+@import url('./footer.css');
+@import url('./modal.css');
+@import url('./burger.css');
 
 

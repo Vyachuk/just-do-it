@@ -37,9 +37,13 @@
 .swiper-wrapper {
   margin-bottom: 20px;
   max-width: 266px;
+  background-color: var(--green-color);
 }
 
 .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .swiper-buttons {
@@ -50,6 +54,9 @@
 }
 
 .button-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-right: 12px;
   width: 32px;
   height: 32px;
@@ -58,9 +65,13 @@
 }
 
 .button-prev-icon {
+  fill: rgba(255, 255, 255, 0.5);
 }
 
 .button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 32px;
   height: 32px;
   border: 1px solid #ffffff;
@@ -68,6 +79,7 @@
 }
 
 .button-next-icon {
+  fill: var(--white-color);
 }
 
 .swiper-numbers {
@@ -85,13 +97,6 @@
   height: 1px;
   margin: 5px 6px;
   background-color: var(--white-color);
-}
-
-.test {
-  width: 436px;
-  height: 307px;
-  margin-bottom: 40px;
-  color: white;
 }
 
 .hero-descr {

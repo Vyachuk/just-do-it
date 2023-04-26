@@ -6,7 +6,7 @@
 </symbol>
 
 <symbol id="icon-close-button" viewBox="0 0 32 32">
-  <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7333" d="M24 8l-16 16"></path> </path>
+  <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7333" d="M24 8l-16 16"></path>
   <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.7333" d="M8 8l16 16"></path>
 </symbol>
 
@@ -34,7 +34,7 @@
   <path d="M17.066 21.756l5.952-8.604-5.952-0.064-4.303 8.667c-0.302 0.887-1.247 0.369-1.682 0 1.858 3.405 4.764 1.419 5.985 0z"></path>
 </symbol>
 
-<symbol id="icon-right-buttom" viewBox="0 0 32 32">
+<symbol id="icon-right-button" viewBox="0 0 32 32">
   <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.3333" d="M12 24l8-8-8-8"></path>
 </symbol>
 

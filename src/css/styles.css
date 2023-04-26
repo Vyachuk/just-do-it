@@ -6,6 +6,7 @@
 */
 
 @import url('./reset.css');
+@import url('./base.css');
 @import url('./header.css');
 @import url('./hero.css');
 @import url('./about-us.css');
@@ -16,72 +17,6 @@
 @import url('./modal.css');
 @import url('./burger.css');
 
-:root {
-  /* font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;  */
-  --mobile-size: 375px;
-  --tablet-size: 768px;
-  --desk-size: 1280px;
-
-  --black-color: #141414;
-  --white-color: #ffffff;
-  --green-color: #1E2827;
-
-}
-
-
-
-body{
-  font-family: 'Epilogue', sans-serif;
-  font-size: 14px;
-  line-height: calc(18 / 14);
-  letter-spacing: -0.02em;
-}
-
-.container{
-  padding: 0 20px;
-  margin: 0 auto;
-
-  max-width: var(--mobile-size);
-  outline: 1px solid red;
-}
-@media screen and (min-width: 768px) {
-  .container {
-    padding: 0 32px;
-    max-width: var(--tablet-size);
-  }
-}
-@media screen and (min-width: 1280px) {
-  .container {
-    padding: 0 52px;
-    max-width: var(--desk-size);
-  }
-}
-
-.section {
-  padding: 40px 0;
-}
-@media screen and (min-width: 768px) {
-  .section {
-    padding: 64px 0;
-  }
-}
-@media screen and (min-width: 1280px) {
-  .section {
-    padding: 80px 0;
-  }
-}
-
-.min-title{
-  font-weight: 600;
-  font-size: 32px;
-  line-height: calc(40 / 32);
-
-  margin-bottom: 40px;
-}
 
 
 

@@ -1,0 +1,119 @@
+.sale {
+    padding: 40px 0 80px 0;
+}
+
+@media screen and (min-width: 768px) {
+.sale-section {
+    padding: 40px 0 128px 0;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+    .sale-section {
+        padding: 80px 0 160px 0;
+    }
+}
+
+.sale-resize {}
+
+.sale-content {
+    margin-bottom: 40px;
+}
+
+.sale-list-resize {}
+
+.sale-item-resize {}
+
+.sale-img-resize {}
+
+.sale-img {}
+
+.sale-card-title {
+    margin-bottom: 8px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: calc(24 / 24);
+    color: var(--black-color);
+}
+
+.sale-subtext {
+    margin-bottom: 16px;
+    font-weight: 400;
+    color: rgba(20, 20, 20, 0.5);
+}
+
+.sale-price {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    color: var(--black-color);
+}
+
+.sale-price-through {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: calc(14 / 12);
+    text-decoration-line: line-through;
+    color: rgba(20, 20, 20, 0.5);
+}
+
+.description-title::before {
+    content: "";
+    display: block;
+    margin-bottom: 8px;
+    width: 335px;
+    height: 0.05rem;
+    background: var(--black-color);
+}
+
+@media screen and (min-width: 768px) {
+    .description-title::before {
+        width: 572px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .description-title::before {
+        width: 369px;
+    }
+}
+
+.description-title {
+    position: relative;
+    margin-bottom: 17px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: calc(24 / 18);
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+.description-title::after {
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 0.05rem;
+    background: var(--black-color);
+}
+
+.sale-text {
+    margin-bottom: 40px;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: rgba(20, 20, 20, 0.5);
+}
+
+@media screen and (min-width: 1280px) {
+    .sale-text {
+        margin-bottom: 20px;
+    }
+}
+
+.sale-item-details {
+    font-weight: 400;
+    letter-spacing: -0.01em;
+    color: rgba(20, 20, 20, 0.5);
+}

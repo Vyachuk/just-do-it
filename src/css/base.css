@@ -74,6 +74,17 @@ body {
     transform: rotate(360deg);
   }
 }
+@keyframes rotate-scale-up {
+  0% {
+    transform: scale(1) rotateZ(0);
+  }
+  50% {
+    transform: scale(2) rotateZ(180deg);
+  }
+  100% {
+    transform: scale(1) rotateZ(360deg);
+  }
+}
 
 .min-title {
   font-weight: 600;
@@ -86,7 +97,7 @@ body {
 
 .min-title:focus,
 .min-title:hover {
-  animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-scale-up 0.65s linear both;
   text-shadow: 3px 3px 7px rgba(0, 0, 0, 0.52);
 }
 

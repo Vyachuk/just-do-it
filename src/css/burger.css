@@ -37,10 +37,6 @@
   color: var(--white-color);
 }
 
-.burger-nav-link:hover {
-  color: #747bff;
-}
-
 .burger-nav-list {
   display: flex;
   flex-direction: column;

@@ -2,15 +2,15 @@
   <div class="modal-container">
     <button class="modal-button-close">
       <svg class="modal-close-btn" width="12px" height="12px">
-        <use href="../img/sprite.svg#icon-close-button"></use>
+        <use href="./img/sprite.svg#icon-close-button"></use>
       </svg>
     </button>
 
     <div class="modal-wrappers-img">
       <img
-        srcset="../img/modal/1@2x.webp 1x, ../img/modal/1@2x.webp 2x"
+        srcset="./img/modal/1@2x.webp 1x, ./img/modal/1@2x.webp 2x"
         class="modal-img"
-        src="../img/modal/1@1x.webp"
+        src="./img/modal/1@1x.webp"
         alt="Watch"
         width="276"
         height="325"
@@ -25,17 +25,14 @@
           class="modal-form-input"
           type="text"
           id="product-name"
-          required
-          pattern="^[a-zA-Z]+\s[a-zA-Z]+$"
           placeholder="Enter your full name"
         />
-
+        <!-- pattern="^[a-zA-Z]+\s[a-zA-Z]+$" -->
         <label class="modal-form-label" for="user-email">Email </label>
         <input
           class="modal-form-input"
-          type="text"
+          type="email"
           id="user-email"
-          required
           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
           placeholder="Enter your email"
         />
@@ -45,7 +42,7 @@
           class="modal-form-input"
           type="text"
           id="user-card"
-          required
+          pattern="^(?=.*\d).*$"
           placeholder="Enter card"
         />
 

@@ -91,6 +91,14 @@
   border-radius: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .button-prev,
+  .button-next {
+    width: 40px;
+    height: 40px;
+  }
+}
+
 .button-prev-icon,
 .button-next-icon {
   fill: rgba(255, 255, 255, 0.5);

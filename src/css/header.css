@@ -1,3 +1,8 @@
+/**
+  |============================
+  | HEADER STYLESS
+  |============================
+*/
 @media only screen and (max-width: 767px) {
   .header-container {
     padding-top: 29px;
@@ -99,73 +104,6 @@
   .menu-toggle-icon {
     display: none;
   }
-}
-
-/* burger */
-
-.burger-section {
-  padding: 29px 20px;
-}
-
-.menu-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 200px;
-}
-
-@media only screen and (min-width: 768px) {
-  .header-logo-link {
-    margin-right: 80px;
-  }
-}
-
-.menu-toggle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-}
-
-.header-nav-link {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  color: var(--white-color);
-}
-
-.burger-nav-link {
-  color: var(--white-color);
-}
-
-.burger-nav-link:hover {
-  color: #747bff;
-}
-
-.burger-nav-list {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 14px;
-}
-
-.burger-section {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--green-color);
-  z-index: 999;
-  transform: translateX(100%);
-  transition: transform 250ms ease-in-out;
-}
-
-.burger-section.is-open {
-  transform: translateX(0);
-}
-
-.close-burger-svg {
-  stroke: var(--white-color);
 }
 
 /**

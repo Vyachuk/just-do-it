@@ -72,8 +72,8 @@
 }
 
 .sale-img {
-    width: 180px;
     height: 350px;
+    object-fit: cover;
     background-color: var(--black-color);
 }
 
@@ -151,7 +151,7 @@
     display: block;
     margin-bottom: 8px;
     max-width: 335px;
-    height: 0.05rem;
+    height: 1px;
     background: var(--black-color);
 }
 
@@ -184,7 +184,7 @@
     content: "";
     display: inline-block;
     width: 16px;
-    height: 0.05rem;
+    height: 1px;
     background: var(--black-color);
 }
 

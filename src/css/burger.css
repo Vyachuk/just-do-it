@@ -10,6 +10,7 @@
 .menu-wrapper {
   display: flex;
   justify-content: space-between;
+  align-items: flex-end;
   margin-bottom: 200px;
 }
 
@@ -27,10 +28,17 @@
   margin: 0;
 }
 
-.header-nav-link {
-  padding-top: 18px;
-  padding-bottom: 18px;
-  color: var(--white-color);
+.burger-nav-link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  transition: var(--transition);
+}
+
+.burger-nav-link:hover,
+.burger-nav-link:focus {
+  opacity: 0.5;
 }
 
 .burger-nav-link {
@@ -62,6 +70,13 @@
 
 .close-burger-svg {
   stroke: var(--white-color);
+  transition: var(--transition);
+}
+
+.close-burger-svg:hover {
+  background-color: gray;
+  border-radius: 50%;
+  stroke: var(--green-color);
 }
 /**
   |============================

@@ -221,10 +221,3 @@ img{
 .modal-link {
     text-decoration:underline
 }
-
-h3{
-    width: 276px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}

@@ -1,220 +1,220 @@
 .footer {
-    background-color: var(--green-color);
+  background-color: var(--green-color);
 }
 
 .footer-container {
-    padding-top: 40px;
-    padding-bottom: 20px;
-}
-
- @media screen and (min-width: 768px) {
-    .footer-container {
-        padding-top: 80px;
-    }
- }
-
- @media screen and (min-width: 1280px) {
-    .footer-container {
-        padding-top: 104px;
-        padding-bottom: 32px;
-    }
- }
-
-.footer-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: space-between;
-    color: var(--white-color);
-    margin-bottom: 80px;
+  padding-top: 40px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) {
-    .footer-wrapper {
-        margin-bottom: 152px;
-    }  
+  .footer-container {
+    padding-top: 80px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
-    .footer-wrapper {
-        margin-bottom: 174px;
-    }  
+  .footer-container {
+    padding-top: 104px;
+    padding-bottom: 32px;
+  }
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  color: var(--white-color);
+  margin-bottom: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    margin-bottom: 152px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .footer-wrapper {
+    margin-bottom: 174px;
+  }
 }
 
 .footer-contact {
-    width: 136px;
-    margin-bottom: 40px;
+  width: 136px;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
-    .footer-contact {
-        width: 181px;
-        margin-bottom: 0; 
-    }  
+  .footer-contact {
+    width: 181px;
+    margin-bottom: 0;
+  }
 }
 
 .footer-logo-link {
-    display: inline-block;
-    margin-bottom: 40px;
-    width: 40px;
-    height: 40px;
-} 
+  display: inline-block;
+  margin-bottom: 40px;
+  width: 40px;
+  height: 40px;
+}
 
 @media screen and (min-width: 768px) {
-    .footer-logo-link {
-        width: 50px;
-        height: 50px;
-    }
+  .footer-logo-link {
+    width: 50px;
+    height: 50px;
+  }
 }
 
 .footer-logo-icon {
- width: 100%;
- height: 100%;
- transition: opacity var(--transition);
+  width: 100%;
+  height: 100%;
+  transition: opacity var(--transition);
 }
 
 .footer-logo-icon:hover,
 .footer-logo-icon:focus {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .footer-address-item:not(:last-child) {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-address-link {
-    font-style: normal;
-    transition: opacity var(--transition);
+  font-style: normal;
+  transition: opacity var(--transition);
 }
 
-.footer-address-link:hover {
-    opacity: 0.5;
-    /* color: rgb(48, 147, 48); */
+.footer-address-link:hover,
+.footer-address-link:focus {
+  opacity: 0.5;
 }
 
 .footer-nav {
-text-transform: uppercase;
+  text-transform: uppercase;
 }
 
 .footer-nav-link {
-    transition: opacity var(--transition);
+  transition: opacity var(--transition);
 }
 
 .footer-nav-link:hover,
 .footer-nav-link:focus {
-opacity: 0.5;
+  opacity: 0.5;
 }
 
-@media screen and (min-width: 768px)  {
-    .footer-nav, 
-    .footer-address {
-font-size: 18px;
-line-height: 1.33;
-    }
+@media screen and (min-width: 768px) {
+  .footer-nav,
+  .footer-address {
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }
 
 .footer-nav-item:not(:last-child) {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 
 @media screen and (min-width: 768px) {
-    .footer-nav-item:not(:last-child) {
-        margin-bottom: 18px;
-    }
+  .footer-nav-item:not(:last-child) {
+    margin-bottom: 18px;
+  }
 }
 
 .footer-socials-list {
-    display: flex;
-    gap: 14px;
+  display: flex;
+  gap: 14px;
 }
 
 @media screen and (min-width: 768px) {
-    .footer-socials-list {
-        gap: 16px;
-    }
+  .footer-socials-list {
+    gap: 16px;
+  }
 }
 
 .footer-socials-item {
-    width: 40px;
-    height: 40px;
+  width: 40px;
+  height: 40px;
 }
 
 @media screen and (min-width: 768px) {
-    .footer-socials-item {
-width: 44px;
-height: 44px;
-    }
+  .footer-socials-item {
+    width: 44px;
+    height: 44px;
+  }
 }
 
-.footer-socials-link  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    transition: border var(--transition);
+.footer-socials-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  transition: border var(--transition);
 }
 
 .footer-socials-link:hover,
 .footer-socials-link:focus {
-    border: 1px solid var(--white-color);
+  border: 1px solid var(--white-color);
 }
 
 .footer-socials-link:hover .footer-social-icon,
 .footer-socials-link:focus .footer-social-icon {
-    opacity: 1;
+  opacity: 1;
 }
 
 .footer-social-icon {
-    fill: var(--white-color);
-    opacity: 0.8;
-    transition: opacity var(--transition);
+  fill: var(--white-color);
+  opacity: 0.8;
+  transition: opacity var(--transition);
 }
 
 @media screen and (min-width: 768px) {
-    .footer-social-icon {
-        width: 28px;
-        height: 28px;
-    }
+  .footer-social-icon {
+    width: 28px;
+    height: 28px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-.footer-license {
+  .footer-license {
     display: flex;
     justify-content: space-between;
-}
+  }
 }
 
 .footer-license-text {
-display: inline-block;
-color: #C6CDD1;
-opacity: 0.9;
+  display: inline-block;
+  color: #c6cdd1;
+  opacity: 0.9;
 }
 
 @media screen and (max-width: 767px) {
-.footer-license-text {
-     font-size: 12px;
-     line-height: 1.16; 
-}
+  .footer-license-text {
+    font-size: 12px;
+    line-height: 1.16;
+  }
 }
 
 .footer-license > .footer-license-text {
-    margin-bottom: 14px;
+  margin-bottom: 14px;
 }
 @media screen and (min-width: 768px) {
-    .footer-license > .footer-license-text {
-        margin-bottom: 0;
-    }
+  .footer-license > .footer-license-text {
+    margin-bottom: 0;
+  }
 }
 
 .footer-license-text:last-child {
-    margin-left: 14px;
+  margin-left: 14px;
 }
 
 @media screen and (min-width: 768px) {
-    .footer-license-text:last-child {
-        margin-left: 18px;
-    }
+  .footer-license-text:last-child {
+    margin-left: 18px;
+  }
 }

@@ -101,7 +101,17 @@
 
 .button-prev-icon,
 .button-next-icon {
+  width: 18px;
+  height: 18px;
   fill: rgba(255, 255, 255, 0.5);
+}
+
+@media screen and (min-width: 768px) {
+  .button-prev-icon,
+  .button-next-icon {
+    width: 24px;
+    height: 24px;
+  }
 }
 
 .button-prev:hover,

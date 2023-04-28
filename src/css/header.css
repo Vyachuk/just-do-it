@@ -46,10 +46,6 @@
   }
 }
 
-.header-section {
-  background-color: var(--black-color);
-}
-
 .header-container {
   display: flex;
   justify-content: space-between;
@@ -123,14 +119,17 @@
   position: fixed;
   top: -1px;
   left: 0;
-  z-index: 100;
+  z-index: 120;
   width: 100%;
 }
-.header.no-transparency {
+.header-section {
   background-color: rgba(17, 19, 25, 0.8);
 }
-.header.no-transparency .header-link {
-  padding: 10px 0;
+
+@media only screen and (min-width: 768px) {
+  .header-section .header-link {
+    padding: 20px 0;
+  }
 }
 
 @media only screen and (max-width: 767px) {

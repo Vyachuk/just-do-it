@@ -3,6 +3,19 @@
   | HEADER STYLESS
   |============================
 */
+.header {
+  position: fixed;
+  top: -1px;
+  left: 0;
+  z-index: 120;
+  width: 100%;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 @media only screen and (max-width: 767px) {
   .header-container {
     padding-top: 29px;
@@ -46,11 +59,7 @@
   }
 }
 
-.header-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
+
 @media only screen and (min-width: 768px) {
   .header-nav {
     display: flex;
@@ -115,13 +124,7 @@
   }
 }
 
-.header {
-  position: fixed;
-  top: -1px;
-  left: 0;
-  z-index: 120;
-  width: 100%;
-}
+
 .header-section {
   background-color: rgba(17, 19, 25, 0.8);
 }

@@ -18,7 +18,6 @@
   openMenuBtn.addEventListener('click', toggleMenu);
   for (let i = 0; i < closeMenuBtn.length; i++) {
     closeMenuBtn[i].addEventListener('click', toggleMenu);
-    console.log(i);
   }
   
   // Close the mobile menu on wider screens if the device orientation changes

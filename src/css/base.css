@@ -22,6 +22,10 @@ body {
   letter-spacing: -0.02em;
 }
 
+body.no-scroll{
+  overflow: hidden;
+}
+
 .container {
   padding: 0 20px;
   margin: 0 auto;
@@ -91,8 +95,8 @@ body {
   font-weight: 600;
   font-size: 32px;
   line-height: calc(40 / 32);
-  transform: translate var(--transition);
-  animation: slide-right 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  /* transform: translate var(--transition); */
+  /* animation: slide-right 2.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both; */
   margin-bottom: 40px;
 }
 
@@ -158,4 +162,18 @@ body {
 .btn:focus {
   transform: scale(1.05) translateY(-5%);
   transition: transform var(--transition);
+}
+.close-btn-wrap{
+  transition: border var(--transition), transorm var(--transition);
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+.close-btn-wrap:hover,
+.close-btn-wrap:focus {
+  border-color: currentColor;
+  stroke: var(--green-color);
+}
+
+.close-burger-svg {
+  stroke: currentColor;
 }

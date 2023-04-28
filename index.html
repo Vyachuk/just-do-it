@@ -27,15 +27,18 @@
     <title>The Watch Spot</title>
     
     <script type="module" crossorigin src="/just-do-it/assets/index-9ddd484b.js"></script>
-    <link rel="stylesheet" href="/just-do-it/assets/index-3b1725cd.css">
+    <link rel="stylesheet" href="/just-do-it/assets/index-aa294020.css">
   </head>
   <body>
-    <header class="header-section">
+    <header class="header-section header" data-header>
   <div class="header-container container">
     <nav class="header-nav">
-      <a class="header-logo-link" href="./index.html">
+      <a
+        class="header-logo-link animate__animated animate__slideInDown"
+        href="./index.html"
+      >
         <img
-          class="header-logo-img"
+          class="header-logo-img logo-icon"
           src="/just-do-it/assets/logo-afa3c4af.png"
           alt="logo-of-company"
         />
@@ -43,14 +46,20 @@
       </a>
 
       <ul class="header-nav-list">
-        <li class="header-nav-item">
-          <a class="header-nav-link active" href="#about">ABOUT US</a>
+        <li
+          class="header-nav-item animate__animated animate__slideInDown animate__delay-0.5s"
+        >
+          <a class="header-nav-link nav-link" href="#about">ABOUT US</a>
         </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#catalog">CATALOG</a>
+        <li
+          class="header-nav-item animate__animated animate__slideInDown animate__delay-1.0s"
+        >
+          <a class="header-nav-link nav-link" href="#catalog">CATALOG</a>
         </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#sale">SALE</a>
+        <li
+          class="header-nav-item animate__animated animate__slideInDown animate__delay-1.5s"
+        >
+          <a class="header-nav-link nav-link" href="#sale">SALE</a>
         </li>
       </ul>
     </nav>
@@ -63,6 +72,12 @@
         <use href="/just-do-it/assets/sprite-a8f5ef0a.svg#icon-burger-menu"></use>
       </svg>
     </button>
+
+    <!-- <button class="hamburger menu-toggle" type="button">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button> -->
 
     <div class="header-link">
       <a class="header-contact-link" href="tel:+380684439426"
@@ -1146,15 +1161,11 @@
     <div class="burger-section js-menu-container" id="mobile-menu">
   <div class="menu-wrapper">
     <a class="header-logo-link" href="./index.html">
-      <img
-        class="header-logo-img"
-        src="../img/logo.png"
-        alt="logo-of-company"
-      />
+      <img class="header-logo-img" src="/just-do-it/assets/logo-afa3c4af.png" alt="logo-of-company" />
       <span class="header-logo-text">thewatchspot</span>
     </a>
     <button class="menu-toggle js-close-menu">
-      <svg class="close-burger-svg" width="12" height="12">
+      <svg class="close-burger-svg" width="24" height="24">
         <use href="../img/sprite.svg#icon-close-button"></use>
       </svg>
     </button>
@@ -1162,13 +1173,13 @@
   <nav class="burger-nav">
     <ul class="burger-nav-list">
       <li class="burger-nav-item">
-        <a href="#about" class="burger-nav-link">ABOUT US</a>
+        <a href="#about" class="burger-nav-link nav-link">ABOUT US</a>
       </li>
       <li class="burger-nav-item">
-        <a href="#catalog" class="burger-nav-link">CATALOG</a>
+        <a href="#catalog" class="burger-nav-link nav-link">CATALOG</a>
       </li>
       <li class="burger-nav-item">
-        <a href="#sale" class="burger-nav-link">SALE</a>
+        <a href="#sale" class="burger-nav-link nav-link">SALE</a>
       </li>
     </ul>
   </nav>

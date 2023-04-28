@@ -164,7 +164,11 @@ stroke: rgba(255, 255, 255, 0.1);
 background-color: transparent;
 
 }
-.catalog-icon:hover{
+.catalog-icon:hover {
+  stroke: white;
+}
+
+.catalog-icon.active{
   fill:white;
-stroke: white;
+  stroke: white;
 }

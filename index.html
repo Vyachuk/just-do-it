@@ -3,28 +3,40 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- <link rel="icon" type="image/svg" href="" /> -->
+    <title>The Watch Spot</title>
+    <!-- Icon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/just-do-it/assets/apple-touch-icon-39fe91b2.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAQAAADZc7J/AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBBwWLDex/d4eAAAECElEQVRIx21VfWwTZRx+7r32ru21nXMdssFEFj6WiCwajSbDhDAGiTEGDTNq/MdATIxEmTGG+JGgJISoIWYzMcr8xzGXRVnigAmOgRPYzBBloBiXpYwJm2y03VfXrtd7f/5xb6/3dvu9uUuavs/z+35OgW2KeCvirQDr2Ccbq54KPsQXYj8f++FAAgoIAIkD53GgDAwqPPBCg/dQ+fD+5IhlERGZqfG2LyqhwwcdGrzwQAUT7iQCB95adafTypJjnMZaXiiFH374lqbIE2jQGu+fPMVJNjN1eTcCMCSKAgLhf61x41OrEE9Ed8/Wr0AQBvzQoTkxSP690OAd2JlOyFBOnIgycz31CCIkKHJpCIJc+N6jVVO/L4bbAd1qL1+GIoRgiDRUsFzTmB3+0+FbR/gScJtifqJlC4pQhCACThpy+IOvZOZk/xZZLpKhRpSgGGEY8EGHF6oqIlDAwI9vePgzfxlcRiAxW3amWon/zLm4e4CY8x+9GX5sn7HeDbe4RSSNnq+ydpsYOYFj+QF+7eWSHYobjxs/JaL5ibWQQoJpO7aXOuOuwJkm3vNoxVse3Q2fH29rinZlQSBwpBDDbYwiUb2pBiYsceCxLx+MbHwvsEpyjz/jLTHz9Jrng/eZSCINHRpC8OhbXq0rUS1meqyF5KkewAMv9OH3s6Zc/VlqzTZ8gLUD7WM0RL/RiKuxFllkUZbG2vZEVKjg/ZvXHdLCsv8o7rKy4LVuLXHv1riexhrk8sulnxrqb9g7CqjNFfHewrlPUx/9QpfTTXuMDV+e+YZ+XbQZmeTgbmjQWbW+9Y3wk7lG5WwKAazAKr3uGT/6OmcWVsvhgXCn/e1jYICnLhS/mT1gMfJwZtZoNbZmmChDED4Yj++vbrhQ/0fkCZlgdrDrcHfK7q8GDToCCCG879kfZy7RPzROc5QV83/92xc3x67L4S9MXXgJAQTggwZo8MFACPegpOqB891jNEOma4lnb1/5Tu6QxaONK4sdXXARRBA58fp8hjvt4kTEeTYr+4/1fbQeRm6lVahQwMSjsnjtpsByd7aKwpj7d3qy/51dgwC4vSJMFFXcPjoRPWFJSi+bZd38ansvFGe/wJxFE+f46eSoW6xli5/9vBnZ/G0Q4IUOP4IoQjFKsRwr//46J2GFypr8t6MWhqPMHqhgzGHi4jHPd6YTyhL+rcxw03OXnPApJyiQAuJQDl6dvLhE+pg4+WGrdFcUMV8Bbp+R5LWOTKoQPv1X18cd04sIAPE50REQdYhg2SOro23u/Dklrny/DWHpm2DLmqK6NNPRzvGMevXBcqOSqQCQmR7raHt312BBskLr8gSKm6Z/JnGxIsbU1ORE78Dhvc1H/hPF4662AwT8D/xk5ZUbQR9pAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDIzLTA0LTI4VDIyOjQ0OjU1KzAwOjAwWXtKBQAAACV0RVh0ZGF0ZTptb2RpZnkAMjAyMy0wNC0yOFQyMjo0NDo1NSswMDowMCgm8rkAAABXelRYdFJhdyBwcm9maWxlIHR5cGUgaXB0YwAAeJzj8gwIcVYoKMpPy8xJ5VIAAyMLLmMLEyMTS5MUAxMgRIA0w2QDI7NUIMvY1MjEzMQcxAfLgEigSi4A6hcRdPJCNZUAAAAASUVORK5CYII=">
+    <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAAHdElNRQfnBBwWLDex/d4eAAABpklEQVQozzWRvWtTYRSHn/uVe9vktra1tqtIi2MLDuLgoCJSEPwD/BjEzUFRUIqKZHDXVXEQXBQVKUiXICIEFKzxY+kHNFilVdGkNU1uk/u+P4ebnPU5h+ec3wEABw+foHK4/ry5+Pvug3FyBHi4OADg4uMvzSQrkmTSjSL9RAR4WYODi/dmf6uibiWrT6foI8TH7eKrce2hlSRZWVmt3iSmnxxe5ve+n0+b2bSRldRYuDFBgYgAXNyP08mSJJn21lrHGqWqt+cvZBIf5368bzacAKj9fHvv6HVnOGEziM+Ufg22/qyBv3HJtDP7+6R4pTz3QXUZdUyatKpfZ9zKocGLuFaiSRSePDFX2mzGuPiuG2w9Ov7aO1XoLFRfro909nrsYWy0WZ6aHBgGaJQe33rSgBwR+Wfn/iZGkrX/vqWJJO38KB8hJAchBYZOT9bfZXt0j21Xr5EnJIAceXax+9Os6VFJtReXx4myoAL6GGCkeGB7uYdbK/MHiXpR+4TkGWJ0+Y5JJWln/ctZ8kQEuDge4GQ/M4vTcTC2Xfl8+9irxGCxWPQffk7sX8jKq2cAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjMtMDQtMjhUMjI6NDQ6NTUrMDA6MDBZe0oFAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIzLTA0LTI4VDIyOjQ0OjU1KzAwOjAwKCbyuQAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi4vaW1nL2ljb25zL2FuZHJvaWQtY2hyb21lLTE5MngxOTIucG5nIiwKICAgICAgICAgICAgInNpemVzIjogIjE5MngxOTIiLAogICAgICAgICAgICAidHlwZSI6ICJpbWFnZS9wbmciCiAgICAgICAgfQogICAgXSwKICAgICJ0aGVtZV9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJiYWNrZ3JvdW5kX2NvbG9yIjogIiNmZmZmZmYiLAogICAgImRpc3BsYXkiOiAic3RhbmRhbG9uZSIKfQo=">
+    <link rel="mask-icon" href="/just-do-it/assets/safari-pinned-tab-15277d4f.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <!-- Fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <!-- Normalize  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
     />
+    <!-- Swiper  -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
     />
+    <!-- AOS  -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <!-- Animate  -->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <title>The Watch Spot</title>
+    <!-- CustomCSS  -->
     
     <script type="module" crossorigin src="/just-do-it/assets/index-c315cc83.js"></script>
     <link rel="stylesheet" href="/just-do-it/assets/index-e3c3aa68.css">
@@ -1070,7 +1082,7 @@
             <nav class="footer-nav">
                 <ul class="footer-nav-list">
                     <li class="footer-nav-item">
-                        <a class="nav-link footer-tel" href="#about">About us</a>
+                        <a class="nav-link" href="#about">About us</a>
                     </li>
                     <li class="footer-nav-item">
                         <a class="nav-link" href="#catalog">Catalog</a>

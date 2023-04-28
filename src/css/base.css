@@ -104,6 +104,42 @@ body {
   }
 }
 
+.logo-icon {
+  transition: transform 400ms linear;
+}
+
+.logo-icon:hover,
+.logo-icon:focus {
+  transform: scale(1.2);
+}
+
+.nav-link {
+  position: relative;
+  transition: opacity var(--transition);
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  opacity: 0.5;
+}
+
+.nav-link::after {
+  content: ' ';
+  display: inline-block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  height: 1px;
+  width: 100%;
+  background-color: var(--white-color);
+  border-radius: 1px;
+  transition: transform var(--transition) 100ms;
+  transform: scaleX(0);
+}
+
+.nav-link:hover.nav-link::after {
+  transform: scaleX(1);
+}
 .btn {
   display: block;
   border-radius: 8px;

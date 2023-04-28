@@ -1,174 +1,179 @@
 .catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 32px;
+  margin-bottom: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog-list {
+    gap: 35px 32px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .catalog-list {
+    gap: 64px 24px;
+    margin-bottom: 80px;
+  }
+}
+.catalog-list-desc {
+  display: none;
+}
+@media only screen and (min-width: 1280px) {
+  .catalog-list-desc {
     display: flex;
     flex-wrap: wrap;
-    gap: 40px 32px;
-    margin-bottom: 40px;
-    }
+  }
+}
+.catalog-item {
+  width: 335px;
+}
+@media only screen and (min-width: 768px) {
+  .catalog-item {
+    width: calc((100% - 32px) / 2);
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .catalog-item {
+    width: calc((100% - (3 * 24px)) / 4);
+  }
+}
+.catalog-gallery {
+  padding: 43px 30px;
+}
+.catalog-title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.02em;
+  color: var(--black-color);
+  margin-bottom: 4px;
+}
 
-    @media only screen and (min-width: 768px) {
-      .catalog-list{
-        gap: 35px 32px;
-      }
-      
-    }
-    @media only screen and (min-width: 1280px) {
-      .catalog-list{
-        gap: 64px 24px;
-   margin-bottom: 80px;
-      }
-    }
-    .catalog-list-desc{
-      display: none;
-    }
-    @media only screen and (min-width: 1280px) {
-      .catalog-list-desc{
-        display: flex;
-        flex-wrap: wrap;
-      }
-    }
-    .catalog-item {
-      width: 335px;
-    }
-    @media only screen and (min-width: 768px) {
-       .catalog-item{
-        width: calc((100% - 32px) / 2);
-      }
-    }
-    @media only screen and (min-width: 1280px) {
-      .catalog-item{
-        width: calc((100% - (3 * 24px)) / 4);
-      }
-    }
-    .catalog-gallery {
-      padding: 43px 30px;
-    }
-    .catalog-title {
-      
-        font-weight: 400;
-        font-size: 14px;
-        line-height: calc(18 / 14);
-        letter-spacing: -0.02em;
-        color: var(--black-color);
-        margin-bottom: 4px;
-      }
-    
-        .catalog-title-name{
-        text-overflow: ellipsis;
-      overflow: hidden; 
-     max-width: 285px; 
-      white-space: nowrap;
-    }
-    @media only screen and (min-width: 768px) {
-       .catalog-title-name{
-        max-width: 260px;
-      }
-    }
+.catalog-title-name {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  max-width: 285px;
+  white-space: nowrap;
+}
+@media only screen and (min-width: 768px) {
+  .catalog-title-name {
+    max-width: 260px;
+  }
+}
 
+@media only screen and (min-width: 1280px) {
+  .catalog-title-name {
+    width: 260px;
+  }
+}
+.catalog-price {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: -0.02em;
 
-    @media only screen and (min-width: 1280px) {
-       .catalog-title-name{
-       width: 260px; 
-      }
-    }
-    .catalog-price {
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    letter-spacing: -0.02em;
-    
-    color: rgba(20, 20, 20, 0.5);
-    }
-    
-    .catalog-btn{
-        display: block;
-        padding: 16px 28px;
-        margin-left: auto;
-        border-radius: 8px;
-      
-    font-weight: 400;
-    font-size: 12px;
-    line-height: calc(14 / 12);
-    
-    text-align: center;
-    text-transform: uppercase;
-    
-    color:var(--white-color);
-    background-color: var(--green-color);
-    }
+  color: rgba(20, 20, 20, 0.5);
+}
+.catalog-btn {
+  padding: 14px 28px;
+  margin-left: auto;
+}
+@media only screen and (min-width: 768px) {
+  .catalog-btn {
+    padding: 18px 35px;
+  }
+}
 
-    /* ------- overlay --------- */
-    .catalog-overlay {
-      position: relative;
-      overflow: hidden;
-      margin-bottom: 14px;
-    }
-    .overlay{
-      position: absolute;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      transform: translate(-101%, 0);
-      /* transition: transform var(--transition-dur-and-fun); */
-      transition-duration: 300ms;
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    padding-top: 40px;
-    padding-right: 60px;
-    padding-left: 40px;
-   
+.btn {
+  display: block;
+  border-radius: 8px;
 
-    background-color: var(--green-color);
-    border-radius: 8px;
-    }
-    .overlay:last-child{
-      margin-bottom: 0;
-    }
+  font-size: 12px;
+  line-height: calc(14 / 12);
 
-    @media only screen and (min-width: 1280px) {
-      .overlay{
-   padding: 20px;
-      }
-    }
-    .title-overlay {
-      font-weight: 400;
-font-size: 14px;
-line-height: calc(18 / 14);
+  text-align: center;
+  text-transform: uppercase;
 
-letter-spacing: -0.02em;
-text-transform: uppercase;
+  color: var(--white-color);
+  background-color: var(--green-color);
+  transition: transform var(--transition);
+}
+.btn:hover,
+.btn:focus {
+  transform: scale(1.05) translateY(-5%);
+  transition: transform var(--transition);
+}
 
-color:var(--white-color);
-margin-bottom: 10px;
- }
-    .content-overlay {
-font-weight: 400;
-font-size: 14px;
-line-height: calc(18 / 14);
-letter-spacing: -0.01em;
-margin-bottom: 20px;
+/* ------- overlay --------- */
+.catalog-overlay {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 14px;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(-101%, 0);
+  transition-duration: 300ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  padding-top: 40px;
+  padding-right: 60px;
+  padding-left: 40px;
 
-color: rgba(255, 255, 255, 0.5);
- }
+  background-color: var(--green-color);
+  border-radius: 8px;
+}
+.overlay:last-child {
+  margin-bottom: 0;
+}
 
+@media only screen and (min-width: 1280px) {
+  .overlay {
+    padding: 20px;
+  }
+}
+.title-overlay {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+  margin-bottom: 10px;
+}
+.content-overlay {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: calc(18 / 14);
+  letter-spacing: -0.01em;
+  margin-bottom: 20px;
+
+  color: rgba(255, 255, 255, 0.5);
+}
 
 .catalog-item:hover .overlay,
-.catalog-item:focus .overlay{
+.catalog-item:focus .overlay {
   transform: translate(0, 0);
 }
 
-.catalog-icon{
+.catalog-icon {
   position: absolute;
   top: 14px;
   right: 14px;
-fill:transparent;
-stroke: rgba(255, 255, 255, 0.1);
-background-color: transparent;
-
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.1);
+  background-color: transparent;
 }
 .catalog-icon:hover {
   stroke: white;
 }
 
-.catalog-icon.active{
-  fill:white;
+.catalog-icon.active {
+  fill: white;
   stroke: white;
 }

@@ -137,9 +137,18 @@
 
 .swiper-numbers {
   color: var(--white-color);
+  bottom: 0;
+  width: 76px;
+  position: relative;
 }
 
-.swiper-number::after {
+@media screen and (min-width: 768px) {
+  .swiper-numbers {
+    width: 84px;
+  }
+}
+
+.swiper-pagination-current::after {
   display: inline-block;
   content: '';
   width: 32px;
@@ -149,7 +158,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .swiper-number::after {
+  .swiper-pagination-current::after {
     width: 40px;
   }
 }

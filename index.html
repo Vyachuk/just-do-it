@@ -26,8 +26,8 @@
     />
     <title>The Watch Spot</title>
     
-    <script type="module" crossorigin src="/just-do-it/assets/index-9ddd484b.js"></script>
-    <link rel="stylesheet" href="/just-do-it/assets/index-aa294020.css">
+    <script type="module" crossorigin src="/just-do-it/assets/index-7504cad2.js"></script>
+    <link rel="stylesheet" href="/just-do-it/assets/index-e3c3aa68.css">
   </head>
   <body>
     <header class="header-section header" data-header>
@@ -41,6 +41,8 @@
           class="header-logo-img logo-icon"
           src="/just-do-it/assets/logo-afa3c4af.png"
           alt="logo-of-company"
+          width="14"
+          height="14"
         />
         <span class="header-logo-text">thewatchspot</span>
       </a>
@@ -277,7 +279,10 @@
         </div>
       </div>
     </div>
-    <p class="hero-descr">
+    <p class="hero-descr"
+    data-aos="fade-left"
+    data-aos-duration="500"
+    >
       Our watches are not just timepieces, but also an expression of your
       personality and lifestyle. From classic designs to modern ones, we have a
       watch to suit every taste and occasion.
@@ -329,7 +334,11 @@
       <section class="about section" id="about">
   <div class="container">
     <div class="about-wrapper">
-      <h2 class="about-title min-title">About us</h2>
+      <h2 class="about-title min-title"
+      data-aos="fade-right"
+      data-aos-duration="600"
+      data-aos-delay="100"
+      >About us</h2>
       <p class="about-first text">
         Welcome to our premium watch collection, where luxury and style meet
         functionality and precision. Our selection of timepieces embodies the
@@ -355,7 +364,11 @@
 
       <section class="section" id="catalog">
     <div class="container">
-        <h2 class="min-title">Catalog</h2>
+        <h2 class="min-title"
+        data-aos="fade-right"
+        data-aos-duration="600"
+        data-aos-delay="100"
+        >Catalog</h2>
         <ul class="catalog-list">
             <li class="catalog-item">
                 <div class="catalog-overlay">
@@ -756,11 +769,17 @@
             New watches
         </p>
         <h2 class="min-title promo-title" 
-            data-aos="fade-right">
+            data-aos="fade-right"
+            data-aos-duration="600"
+            data-aos-delay="100"
+            data-aos-delay="230">
             Green And Bronze—The Match Made In Heaven
         </h2>
         <ul class="promo-list">
-            <li class="promo-item">
+            <li class="promo-item"
+            data-aos="fade-right"
+            data-aos-duration="600"
+            >
                 <picture>
                     <source media="(min-width: 1280px)" 
                         srcset="/just-do-it/assets/2-desk-576x422@1x-7c00d98b.webp 1x, /just-do-it/assets/2-desk-576x422@2x-5ca442b6.webp 2x"
@@ -787,7 +806,11 @@
                         loading="lazy" />
                 </picture>
             </li>
-            <li class="promo-item">
+            <li class="promo-item"
+            data-aos="fade-left"
+            data-aos-duration="600"
+            data-aos-delay="230"
+            >
                 <picture>
                     <source media="(min-width: 1280px)"
                         srcset="/just-do-it/assets/1-desk-576x422@1x-60ad1723.webp 1x, /just-do-it/assets/1-desk-576x422@2x-634e191a.webp 2x"
@@ -818,7 +841,11 @@
 </section>
       <section class="sale" id="sale">
   <div class="container">
-    <h2 class="min-title sale-title">Sale</h2>
+    <h2 class="min-title sale-title"
+    data-aos="fade-right"
+    data-aos-duration="600"
+    data-aos-delay="100"
+    >Sale</h2>
     <div class="sale-resize">
       <div class="sale-product">
         <ul
@@ -1083,16 +1110,20 @@
         <div class="footer-license">
             <p class="footer-license-text">&copy;2022 The Watch Spot. All rights reserved.</p>
             <div class="footer-license-sub">
-                <p class="footer-license-text">Privacy Policy</p>
+                <a href="#" class="footer-address-link">
+                    <p class="footer-license-text">Privacy Policy</p>
+                </a>
+                <a href="#" class="footer-address-link">
                 <p class="footer-license-text">Terms of Service</p>
+                </a>
             </div>
         </div>
     </div>
 </footer>
     <div class="backdrop is-hidden" data-modal>
-  <div class="modal container" >
-    <button class="modal-button-close" data-modal-close>
-      <svg class="modal-close-btn" width="12px" height="12px">
+  <div class="modal container">
+    <button class="modal-button-close close-btn-wrap" data-modal-close>
+      <svg class="close-burger-svg modal-svg" width="24" height="24">
         <use href="/just-do-it/assets/sprite-a8f5ef0a.svg#icon-close-button"></use>
       </svg>
     </button>
@@ -1116,6 +1147,7 @@
           class="modal-form-input"
           type="text"
           id="product-name"
+          pattern="[A-Za-z]{1,32}"
           placeholder="Enter your full name"
         />
         <!-- pattern="^[a-zA-Z]+\s[a-zA-Z]+$" -->
@@ -1159,12 +1191,12 @@
 </div>
 
     <div class="burger-section js-menu-container" id="mobile-menu">
-  <div class="menu-wrapper">
+  <div class="menu-wrapper container">
     <a class="header-logo-link" href="./index.html">
       <img class="header-logo-img" src="/just-do-it/assets/logo-afa3c4af.png" alt="logo-of-company" />
       <span class="header-logo-text">thewatchspot</span>
     </a>
-    <button class="menu-toggle js-close-menu">
+    <button class="close-btn-wrap menu-toggle js-close-menu">
       <svg class="close-burger-svg" width="24" height="24">
         <use href="../img/sprite.svg#icon-close-button"></use>
       </svg>
@@ -1173,13 +1205,13 @@
   <nav class="burger-nav">
     <ul class="burger-nav-list">
       <li class="burger-nav-item">
-        <a href="#about" class="burger-nav-link nav-link">ABOUT US</a>
+        <a href="#about" class="burger-nav-link nav-link js-close-menu">ABOUT US</a>
       </li>
       <li class="burger-nav-item">
-        <a href="#catalog" class="burger-nav-link nav-link">CATALOG</a>
+        <a href="#catalog" class="burger-nav-link nav-link js-close-menu">CATALOG</a>
       </li>
       <li class="burger-nav-item">
-        <a href="#sale" class="burger-nav-link nav-link">SALE</a>
+        <a href="#sale" class="burger-nav-link nav-link js-close-menu">SALE</a>
       </li>
     </ul>
   </nav>

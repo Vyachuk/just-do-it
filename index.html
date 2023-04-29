@@ -39,7 +39,7 @@
     <!-- CustomCSS  -->
     
     <script type="module" crossorigin src="/just-do-it/assets/index-c315cc83.js"></script>
-    <link rel="stylesheet" href="/just-do-it/assets/index-e3c3aa68.css">
+    <link rel="stylesheet" href="/just-do-it/assets/index-e6cd9295.css">
   </head>
   <body>
     <header class="header-section header" data-header>
@@ -49,13 +49,11 @@
         class="header-logo-link animate__animated animate__slideInDown"
         href="./index.html"
       >
-        <img
-          class="header-logo-img logo-icon"
-          src="/just-do-it/assets/logo-afa3c4af.png"
-          alt="logo-of-company"
-          width="14"
-          height="14"
-        />
+      <picture>
+        <source srcset="/just-do-it/assets/logo-45add285.webp " type="image/webp" />
+        <source srcset="/just-do-it/assets/logo-afa3c4af.png " type="image/png" />
+        <img class="header-logo-img logo-icon" src="/just-do-it/assets/logo-45add285.webp" alt="Logo of company">
+      </picture> 
         <span class="header-logo-text">thewatchspot</span>
       </a>
 
@@ -78,6 +76,7 @@
       </ul>
     </nav>
     <button
+      type="button"
       class="menu-toggle js-open-menu"
       aria-expanded="false"
       aria-controls="mobile-menu"
@@ -363,17 +362,12 @@
         personality and style. So why settle for anything less than the best?
         Browse our collection today and discover the perfect watch for you.
       </p>
-
-      <img
-        class="about-img"
-        src="/just-do-it/assets/watchspot-aebc2176.gif"
-        alt="clock on black background"
-        width="335"
-      />
+      <video class="about-img" width="335" autoplay muted loop>
+        <source src="/just-do-it/assets/watchspot-572f4f66.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </section>
-
       <section class="section" id="catalog">
     <div class="container">
         <h2 class="min-title"
@@ -1066,7 +1060,11 @@
         <div class="footer-wrapper">
             <div class="footer-contact">
                 <a class="footer-logo-link" href="./index.html">
-                    <img class="footer-logo-icon logo-icon" src="/just-do-it/assets/logo-afa3c4af.png" alt="Logo of company">
+                    <picture>
+                        <source srcset="/just-do-it/assets/logo-45add285.webp " type="image/webp" />
+                        <source srcset="/just-do-it/assets/logo-afa3c4af.png " type="image/png" />
+                        <img class="footer-logo-icon logo-icon" src="/just-do-it/assets/logo-45add285.webp" alt="Logo of company">
+                    </picture>
                 </a>
                 <address class="footer-address">
                     <ul class="footer-address-list">
@@ -1135,7 +1133,7 @@
 </footer>
     <div class="backdrop is-hidden" data-modal>
   <div class="modal container">
-    <button class="modal-button-close close-btn-wrap" data-modal-close>
+    <button type="button" class="modal-button-close close-btn-wrap" data-modal-close>
       <svg class="close-burger-svg modal-svg" width="24" height="24">
         <use href="/just-do-it/assets/sprite-a8f5ef0a.svg#icon-close-button"></use>
       </svg>
@@ -1209,7 +1207,7 @@
       <img class="header-logo-img" src="/just-do-it/assets/logo-afa3c4af.png" alt="logo-of-company" />
       <span class="header-logo-text">thewatchspot</span>
     </a>
-    <button class="close-btn-wrap menu-toggle js-close-menu">
+    <button type="button" class="close-btn-wrap menu-toggle js-close-menu">
       <svg class="close-burger-svg" width="24" height="24">
         <use href="/just-do-it/assets/sprite-a8f5ef0a.svg#icon-close-button"></use>
       </svg>

@@ -5,13 +5,11 @@
         class="header-logo-link animate__animated animate__slideInDown"
         href="./index.html"
       >
-        <img
-          class="header-logo-img logo-icon"
-          src="./img/logo.png"
-          alt="logo-of-company"
-          width="14"
-          height="14"
-        />
+      <picture>
+        <source srcset="./img/logo.webp" type="image/webp" />
+        <source srcset="./img/logo.png" type="image/png" />
+        <img class="header-logo-img logo-icon" src="./img/logo.webp" alt="Logo of company">
+      </picture> 
         <span class="header-logo-text">thewatchspot</span>
       </a>
 
@@ -34,6 +32,7 @@
       </ul>
     </nav>
     <button
+      type="button"
       class="menu-toggle js-open-menu"
       aria-expanded="false"
       aria-controls="mobile-menu"

@@ -198,12 +198,12 @@
   }
 }
 
-.footer-license-text:last-child {
-  margin-left: 14px;
-}
+.footer-license-text:first-child {
+  margin-right: 14px;
+} 
 
 @media screen and (min-width: 768px) {
-  .footer-license-text:last-child {
-    margin-left: 18px;
+  .footer-license-text:first-child {
+    margin-right: 18px;
   }
 }

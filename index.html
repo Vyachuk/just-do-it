@@ -20,10 +20,10 @@
       rel="stylesheet"
     />
     <!-- Normalize  -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- Swiper  -->
     <link
       rel="stylesheet"
@@ -1158,7 +1158,7 @@
           class="modal-form-input"
           type="text"
           id="product-name"
-          pattern="[A-Za-z]{1,32}"
+          pattern="^[a-zA-Z]+\s[a-zA-Z]+$" 
           placeholder="Enter your full name"
         />
         <!-- pattern="^[a-zA-Z]+\s[a-zA-Z]+$" -->
@@ -1191,10 +1191,10 @@
 
         <button class="modal-button-submit" type="submit">Submit</button>
         <span class="modal-text-link">
-          By clicking on “Submit” button, you agree to our
+          By clicking on "Submit" button, you agree to our
           <a class="modal-link" target="_blank" rel="noopener noreferer" href=""
             >Privacy Policy</a
-          >,and allow Promodo to use this information for marketing purposes.
+          >, and allow Promodo to use this information for marketing purposes.
         </span>
       </form>
     </div>

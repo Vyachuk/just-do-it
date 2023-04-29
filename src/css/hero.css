@@ -189,10 +189,11 @@
   }
 }
 /* ----------  Animation h1 ---------- */
-.text-focus-in {
-  -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53)
-    both;
-  animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+@media screen and (min-width: 768px) {
+  .text-focus-in {
+    -webkit-animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+    animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  }
 }
 
 @-webkit-keyframes text-focus-in {

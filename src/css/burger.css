@@ -13,11 +13,18 @@
   background-color: var(--green-color);
   z-index: 999;
   transform: translateX(100%);
-  transition: transform var(--transition);
+  opacity: 0;
+  visibility: hidden;
+
+  transition: transform var(--transition), opacity var(--transition), visibility var(--transition);
+
 }
 
 .burger-section.is-open {
+  opacity: 1;
   transform: translateX(0);
+  visibility: visible;
+  
 }
 
 @media only screen and (min-width: 768px) {

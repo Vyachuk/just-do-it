@@ -44,10 +44,22 @@
            
         }
     }
-
+    .about-img{
+        max-width: 335px;
+        overflow: hidden;
+        height: 365px;
+        object-fit: cover;
+    }
     @media screen and (min-width: 768px){
         .about-img{
-            width: 705px;
+            max-width: 704px;
+            height: 465px;
+        }
+    }
+    @media screen and (min-width: 1280px) {
+        .about-img {
+            max-width: 892px;
+            height: 500px;
         }
     }
     @media screen and (min-width: 768px){
@@ -73,11 +85,7 @@
         }
     }
 
- @media screen and (min-width: 1280px){
-        .about-img{
-            width: 892px;
-        }
-    }
+ 
 
   
 

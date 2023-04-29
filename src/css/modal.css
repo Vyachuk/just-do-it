@@ -170,5 +170,41 @@ img{
 }
 
 .modal-link {
-    text-decoration:underline
+    text-decoration:underline;
+    margin: 0;
+}
+
+.modal-link {
+    text-decoration: underline;
+    margin: 0;
+
+    transition: color var(--transition);
+}
+
+.modal-link:hover,
+.modal-link:focus {
+    color: #141414;
+}
+
+@media screen and (min-width:1280px) {
+    .modal-link {
+        margin-right: 19px;
+
+    }
+}
+
+.modal-text {
+    margin-top: 14px;
+    width: 276px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@media screen and (min-width:1280px) {
+    .modal-text-link {
+
+        max-width: 383px;
+        display: inline-block;
+    }
 }

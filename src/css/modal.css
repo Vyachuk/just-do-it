@@ -187,9 +187,8 @@ img{
 }
 
 @media screen and (min-width:1280px) {
-    .modal-link {
-        margin-right: 19px;
-
+    .coma {
+        margin-right: 45px;
     }
 }
 

@@ -13,12 +13,21 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- Fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap"
       rel="stylesheet"
-    />
+    /> -->
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap"
+      as="style" 
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous" 
+      referrerpolicy="no-referrer" 
+      onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Epilogue:wght@300;400;600&display=swap">
+    </noscript>
     <!-- Normalize  -->
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" 
       as="style"
@@ -57,7 +66,7 @@
     <!-- CustomCSS  -->
     
     <script type="module" crossorigin src="/just-do-it/assets/index-539dfb41.js"></script>
-    <link rel="stylesheet" href="/just-do-it/assets/index-0359849c.css">
+    <link rel="stylesheet" href="/just-do-it/assets/index-0b4cacc7.css">
   </head>
   <body>
     <header class="header-section header" data-header>
@@ -70,7 +79,7 @@
       <picture>
         <source srcset="/just-do-it/assets/logo-45add285.webp " type="image/webp" />
         <source srcset="/just-do-it/assets/logo-afa3c4af.png " type="image/png" />
-        <img class="header-logo-img logo-icon" src="/just-do-it/assets/logo-afa3c4af.png" alt="Logo of company">
+        <img class="header-logo-img logo-icon" src="/just-do-it/assets/logo-45add285.webp" alt="Logo of company">
       </picture> 
         <span class="header-logo-text">thewatchspot</span>
       </a>
@@ -364,7 +373,10 @@
       />
       <img
         src="/just-do-it/assets/mob-bg-335x410@1x-116bd0f2.webp"
+        class="hero-big-image"
         alt="man's hand with a watch"
+        width="704"
+        height="410"
       />
     </picture>
   </div>
@@ -915,6 +927,8 @@
                 class="sale-product-img"
                 src="/just-do-it/assets/1@1x-9d2a0d3c.png"
                 alt="metal watch front view"
+                width="146"
+                height="146"
               />
             </picture>
           </li>
@@ -946,6 +960,8 @@
                 class="sale-product-img"
                 src="/just-do-it/assets/2@1x-e1df3161.png"
                 alt="metal watch side view"
+                width="146"
+                height="146"
               />
             </picture>
           </li>
@@ -977,6 +993,8 @@
                 class="sale-product-img"
                 src="/just-do-it/assets/3@1x-dc33d19c.png"
                 alt="metal watch back view"
+                width="146"
+                height="146"
               />
             </picture>
           </li>
@@ -1008,6 +1026,8 @@
                 class="sale-product-img"
                 src="/just-do-it/assets/4@1x-c7073207.png"
                 alt="metal watch close-up view"
+                width="146"
+                height="146"
               />
             </picture>
           </li>
@@ -1043,6 +1063,8 @@
               class="sale-img"
               src="/just-do-it/assets/big@1x-1d886971.png"
               alt="metal watch"
+              width="406"
+              height="614"
             />
           </picture>
         </div>
@@ -1235,30 +1257,36 @@
 </div>
 
     <div class="burger-section js-menu-container" id="mobile-menu">
-  <div class="menu-wrapper">
-    <a class="header-logo-link" href="./index.html">
-      <img class="header-logo-img" src="/just-do-it/assets/logo-afa3c4af.png" alt="logo-of-company" />
-      <span class="header-logo-text">thewatchspot</span>
-    </a>
-    <button type="button" class="close-btn-wrap menu-toggle js-close-menu">
-      <svg class="close-burger-svg" width="24" height="24">
-        <use href="/just-do-it/assets/sprite-a8f5ef0a.svg#icon-close-button"></use>
-      </svg>
-    </button>
+  <div class="container">
+    <div class="menu-wrapper">
+      <a class="header-logo-link" href="./index.html">
+        <picture>
+          <source srcset="/just-do-it/assets/logo-45add285.webp " type="image/webp" />
+          <source srcset="/just-do-it/assets/logo-afa3c4af.png " type="image/png" />
+          <img class="header-logo-img logo-icon" src="/just-do-it/assets/logo-45add285.webp" alt="Logo of company">
+        </picture>
+        <span class="header-logo-text">thewatchspot</span>
+      </a>
+      <button type="button" class="close-btn-wrap menu-toggle js-close-menu">
+        <svg class="close-burger-svg" width="24" height="24">
+          <use href="/just-do-it/assets/sprite-a8f5ef0a.svg#icon-close-button"></use>
+        </svg>
+      </button>
+    </div>
+    <nav class="burger-nav">
+      <ul class="burger-nav-list">
+        <li class="burger-nav-item">
+          <a href="#about" class="burger-nav-link nav-link js-close-menu">ABOUT US</a>
+        </li>
+        <li class="burger-nav-item">
+          <a href="#catalog" class="burger-nav-link nav-link js-close-menu">CATALOG</a>
+        </li>
+        <li class="burger-nav-item">
+          <a href="#sale" class="burger-nav-link nav-link js-close-menu">SALE</a>
+        </li>
+      </ul>
+    </nav>
   </div>
-  <nav class="burger-nav">
-    <ul class="burger-nav-list">
-      <li class="burger-nav-item">
-        <a href="#about" class="burger-nav-link nav-link js-close-menu">ABOUT US</a>
-      </li>
-      <li class="burger-nav-item">
-        <a href="#catalog" class="burger-nav-link nav-link js-close-menu">CATALOG</a>
-      </li>
-      <li class="burger-nav-item">
-        <a href="#sale" class="burger-nav-link nav-link js-close-menu">SALE</a>
-      </li>
-    </ul>
-  </nav>
 </div>
 
 

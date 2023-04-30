@@ -9,7 +9,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 29px 20px;
+  padding-top: 29px;
+  padding-bottom: 29px;
   background-color: var(--green-color);
   z-index: 999;
   transform: translateX(100%);
